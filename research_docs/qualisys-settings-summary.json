@@ -1,0 +1,200 @@
+{
+  "source_path": "C:\\Users\\poon1\\Desktop\\kight_recover\\Gait overlay 8.settings.xml.txt",
+  "source_sha256": "f6f26131a749ce1fd223d8db759e05f9bc81c4856557650d5b82c699f4ababa4",
+  "qtm_source_recording": "C:\\Users\\PC\\Documents\\Qualisys TU\\Data\\TU_T_2026-07-31_WC1\\2026-09-25\\Gait overlay_unspecified\\Gait overlay 8.qtm",
+  "capture_start": {
+    "Date": "2026-09-25",
+    "Time": "10:21:18.200",
+    "Timestamp": "5102.91724190"
+  },
+  "camera_count": 16,
+  "all_active": true,
+  "all_marked_calibrated": true,
+  "camera_residual_summary_mm": {
+    "min": 0.577224,
+    "mean": 0.7453866874999999,
+    "median": 0.7320005,
+    "max": 0.94508
+  },
+  "cameras": [
+    {
+      "serial": "54229",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1110,
+      "average_residual_mm": 0.610867,
+      "rotation_orthogonality_max_error": 6.18914000050097e-07,
+      "rotation_determinant": 1.0000002281688318
+    },
+    {
+      "serial": "54232",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1167,
+      "average_residual_mm": 0.688955,
+      "rotation_orthogonality_max_error": 8.738669998731297e-07,
+      "rotation_determinant": 0.9999993947682658
+    },
+    {
+      "serial": "54230",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1514,
+      "average_residual_mm": 0.582911,
+      "rotation_orthogonality_max_error": 4.997350000479628e-07,
+      "rotation_determinant": 0.9999996666178187
+    },
+    {
+      "serial": "54231",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1553,
+      "average_residual_mm": 0.662777,
+      "rotation_orthogonality_max_error": 5.295809999417145e-07,
+      "rotation_determinant": 1.0000002908558867
+    },
+    {
+      "serial": "34454",
+      "model": "Miqus Video Plus",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1135,
+      "average_residual_mm": 0.849971,
+      "rotation_orthogonality_max_error": 1.112020999949337e-06,
+      "rotation_determinant": 0.9999997550168223
+    },
+    {
+      "serial": "34455",
+      "model": "Miqus Video Plus",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1612,
+      "average_residual_mm": 0.7981,
+      "rotation_orthogonality_max_error": 5.475899999856575e-07,
+      "rotation_determinant": 1.0000000596162095
+    },
+    {
+      "serial": "34456",
+      "model": "Miqus Video Plus",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1148,
+      "average_residual_mm": 0.864082,
+      "rotation_orthogonality_max_error": 5.52287000053153e-07,
+      "rotation_determinant": 0.9999999184422308
+    },
+    {
+      "serial": "34453",
+      "model": "Miqus Video Plus",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 819,
+      "average_residual_mm": 0.904876,
+      "rotation_orthogonality_max_error": 6.767259999040931e-07,
+      "rotation_determinant": 0.999999536461716
+    },
+    {
+      "serial": "33672",
+      "model": "Miqus Hybrid",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1236,
+      "average_residual_mm": 0.822274,
+      "rotation_orthogonality_max_error": 4.79677999876138e-07,
+      "rotation_determinant": 0.9999998707982671
+    },
+    {
+      "serial": "33673",
+      "model": "Miqus Hybrid",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1532,
+      "average_residual_mm": 0.702596,
+      "rotation_orthogonality_max_error": 5.511070000352447e-07,
+      "rotation_determinant": 0.9999997238776305
+    },
+    {
+      "serial": "33671",
+      "model": "Miqus Hybrid",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1173,
+      "average_residual_mm": 0.94508,
+      "rotation_orthogonality_max_error": 1.0456560000093873e-06,
+      "rotation_determinant": 1.000000746217059
+    },
+    {
+      "serial": "33670",
+      "model": "Miqus Hybrid",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1219,
+      "average_residual_mm": 0.679985,
+      "rotation_orthogonality_max_error": 6.517220000560968e-07,
+      "rotation_determinant": 1.0000004230037123
+    },
+    {
+      "serial": "54228",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 803,
+      "average_residual_mm": 0.577224,
+      "rotation_orthogonality_max_error": 6.075100000835221e-07,
+      "rotation_determinant": 1.0000000219702558
+    },
+    {
+      "serial": "54226",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1537,
+      "average_residual_mm": 0.761405,
+      "rotation_orthogonality_max_error": 5.64746999942578e-07,
+      "rotation_determinant": 0.9999995096122409
+    },
+    {
+      "serial": "54233",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 815,
+      "average_residual_mm": 0.696346,
+      "rotation_orthogonality_max_error": 8.455020001907343e-07,
+      "rotation_determinant": 1.0000004540740561
+    },
+    {
+      "serial": "54227",
+      "model": "Arqus A5",
+      "active": "1",
+      "calibrated": "true",
+      "point_count": 1328,
+      "average_residual_mm": 0.778738,
+      "rotation_orthogonality_max_error": 6.264170000491731e-07,
+      "rotation_determinant": 1.0000002961596735
+    }
+  ],
+  "force_plates": [
+    {
+      "Length": "600.000024",
+      "Width": "400.000006",
+      "Name": "S077435"
+    },
+    {
+      "Length": "600.000024",
+      "Width": "400.000006",
+      "Name": "S077440"
+    }
+  ],
+  "limitations": [
+    "Per-camera residual is not absolute position uncertainty",
+    "No calibration creation date/version or wand validation statistics in this XML",
+    "No explicit global/C3D axis convention or export transform",
+    "No IMU firmware, CSV scaling, mounting rotations, or shared IMU synchronization event",
+    "One named QTM recording; mapping to canonical study recordings unresolved"
+  ]
+}

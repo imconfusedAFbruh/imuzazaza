@@ -1,0 +1,43 @@
+<div id="slope-three-dimensional">
+  <h3>Measured slope trajectories in 3D</h3>
+  <label class="form-label" for="slope-recording">Recording</label>
+  <select class="form-select" id="slope-recording" aria-label="Slope recording"></select>
+  <div id="slope-plot" role="img" aria-label="Rotatable three-dimensional measured axle-midpoint trajectory" style="width:100%;height:440px"></div>
+  <div id="slope-elevation" role="img" aria-label="Measured C3D Z coordinate versus time" style="width:100%;height:220px"></div>
+  <div id="slope-detail" class="text-small tabular-nums" aria-live="polite"></div>
+  <div class="text-small">Source midpoint XYZ · training recordings · equal axis scale · stored processed sections dashed</div>
+  <script type="application/json" id="slope-plot-data">__SLOPE_DATA__</script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+<script>
+(() => {
+  const root=document.getElementById('slope-three-dimensional');
+  const records=JSON.parse(root.querySelector('#slope-plot-data').textContent);
+  const select=root.querySelector('#slope-recording'),plot=root.querySelector('#slope-plot'),elevation=root.querySelector('#slope-elevation'),detail=root.querySelector('#slope-detail');
+  for(const r of records){const option=document.createElement('option');option.value=r.id;option.textContent=r.label;select.appendChild(option);}
+  const datasetKey=[...new Set(records.map(r=>r.condition))].sort().join('+');
+  const saved=window.openai?.widgetState?.modelContent?.dataset===datasetKey?window.openai.widgetState.modelContent.recording:null;
+  select.value=records.some(r=>r.id===saved)?saved:records.find(r=>r.condition==='SlopeF').id;
+  function color(token){const probe=document.createElement('span');probe.style.color=`var(${token})`;probe.style.display='none';root.appendChild(probe);const resolved=getComputedStyle(probe).color;probe.remove();return resolved;}
+  function draw(){
+    const r=records.find(r=>r.id===select.value),fg=color('--foreground'),line=color('--viz-series-1'),processedColor=color('--viz-series-2'),grid=color('--border');
+    const flags=r.observed??r.points.map(p=>p!==null),hasProcessed=(r.processed_n??0)>0;
+    const seriesPoints=processed=>r.points.map((p,i)=>{if(!p)return null;const include=processed?(!flags[i]||(i>0&&r.points[i-1]&&!flags[i-1])||(i+1<r.points.length&&r.points[i+1]&&!flags[i+1])):flags[i];return include?p:null;});
+    const series=[{name:'Camera-observed',points:seriesPoints(false),color:line,dash:'solid'}];if(hasProcessed)series.push({name:'Stored processed',points:seriesPoints(true),color:processedColor,dash:'dash'});
+    const traces=series.map(s=>({type:'scatter3d',mode:'lines',name:s.name,x:s.points.map(p=>p?.[0]??null),y:s.points.map(p=>p?.[1]??null),z:s.points.map(p=>p?.[2]??null),customdata:r.times,line:{color:s.color,width:5,dash:s.dash},connectgaps:false,hovertemplate:'X %{x:.3f} m<br>Y %{y:.3f} m<br>C3D Z %{z:.3f} m<br>Time %{customdata:.2f} s<extra>'+s.name+'</extra>'}));
+    const first=r.points.find(p=>p!==null),last=[...r.points].reverse().find(p=>p!==null);
+    for(const [name,p,symbol] of [['Start',first,'circle'],['End',last,'diamond']])traces.push({type:'scatter3d',mode:'markers',name,showlegend:false,x:[p[0]],y:[p[1]],z:[p[2]],marker:{color:fg,size:5,symbol},hovertemplate:name+'<br>X %{x:.3f} m<br>Y %{y:.3f} m<br>C3D Z %{z:.3f} m<extra></extra>'});
+    const observed=r.points.filter(p=>p!==null),ranges=[0,1,2].map(j=>{const values=observed.map(p=>p[j]),lo=Math.min(...values),hi=Math.max(...values),pad=Math.max(.025,(hi-lo)*.08);return [lo-pad,hi+pad];});
+    const spans=ranges.map(v=>v[1]-v[0]),largest=Math.max(...spans)/2.2;
+    const axis=(label,j)=>({title:{text:label,font:{color:fg}},range:ranges[j],color:fg,gridcolor:grid,zerolinecolor:grid,showbackground:false,nticks:j===0?4:2,showticklabels:j===0});
+    Plotly.react(plot,traces,{paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:fg},margin:{l:0,r:0,b:0,t:30},showlegend:hasProcessed,legend:{orientation:'h',x:0,y:1},uirevision:'slope-camera',scene:{aspectmode:'manual',aspectratio:{x:spans[0]/largest,y:spans[1]/largest,z:spans[2]/largest},xaxis:axis('X (m)',0),yaxis:axis('Y (m)',1),zaxis:axis('Z (m)',2),camera:{eye:{x:.7,y:.9,z:.5},projection:{type:'orthographic'}}}},{responsive:true,displaylogo:false,modeBarButtonsToRemove:['toImage']});
+    Plotly.react(elevation,series.map(s=>({type:'scatter',mode:'lines',name:s.name,x:r.times,y:s.points.map(p=>p?.[2]??null),connectgaps:false,line:{color:s.color,width:2,dash:s.dash},hovertemplate:'Time %{x:.2f} s<br>C3D Z %{y:.4f} m<extra>'+s.name+'</extra>'})),{paper_bgcolor:'rgba(0,0,0,0)',plot_bgcolor:'rgba(0,0,0,0)',font:{color:fg},margin:{l:65,r:20,b:45,t:25},showlegend:false,xaxis:{title:'Time (s)',gridcolor:grid,zerolinecolor:grid,nticks:4},yaxis:{title:'C3D Z from start (m)',gridcolor:grid,zerolinecolor:grid,nticks:4}},{responsive:true,displaylogo:false,displayModeBar:false});
+    detail.textContent=`${r.condition} · ${r.n.toLocaleString()} observed + ${(r.processed_n??0).toLocaleString()} stored processed frames · C3D Z range ${r.zrange.toFixed(3)} m`;
+  }
+  select.addEventListener('change',()=>{draw();window.openai?.setWidgetState?.({modelContent:{recording:select.value,dataset:datasetKey},privateContent:null}).catch(()=>{});});
+  window.addEventListener('openai:set_globals',event=>{const model=event.detail?.globals?.widgetState?.modelContent,id=model?.recording;if(model?.dataset===datasetKey&&records.some(r=>r.id===id)){select.value=id;draw();}});
+  new ResizeObserver(()=>{Plotly.Plots.resize(plot);Plotly.Plots.resize(elevation);}).observe(root);
+  new MutationObserver(draw).observe(document.documentElement,{attributes:true,attributeFilter:['class','style','data-theme']});
+  draw();
+})();
+</script>

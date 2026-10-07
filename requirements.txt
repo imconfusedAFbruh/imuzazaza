@@ -1,0 +1,7 @@
+numpy>=2.0
+scipy>=1.14
+matplotlib>=3.9
+ezc3d>=1.5
+PyYAML>=6.0
+# Optional: required only by the learn command.
+torch>=2.2

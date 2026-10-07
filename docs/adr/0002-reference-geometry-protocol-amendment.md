@@ -1,0 +1,3 @@
+# Amend reference geometry using training acquisitions
+
+The first experiment removed stable wider marker pairs before synchronization because it imposed a single configured marker distance. Protocol v2 learns supported marker-distance bands and rigidity thresholds from training C3Ds, with No.20 providing independent evidence of the wider setup, and reports reference failures separately from clock and matching failures. Preserve the original source/results, keep the participant split, and disclose all amended test results as retrospective because the original test participants were already inspected; optical marker distance does not establish physical hub width.
