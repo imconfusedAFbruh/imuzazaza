@@ -103,8 +103,8 @@ def settings(root):
                 marker_separation_m=float(config['chair']['L_hub']) + 2 * float(config['chair']['reflector_offset_m']),
                 marker_tolerance_m=float(config['mocap']['axle_tol']),
                 distance_intervals_m=[1., 5., 10.],
-                accel_range_g=2., gyro_range_dps=2000.,
-                encoding='unknown; empirical training-only calibration',
+                accel_range_g=4., gyro_range_dps=2000.,
+                encoding='raw int16 register counts; empirical training-only calibration',
                 coordinate_plane='C3D XY; verify QTM Z-up convention before publication')
 
 
@@ -764,7 +764,7 @@ def validation_report(out):
     text.extend(f'- {count}: {reason}' for reason, count in counts.items())
     text.extend(['', '## Interpretation', '',
                  'These results guide model development. The selected checkpoint was chosen on these validation participants; this is not an independent final performance estimate. Report all QC exclusions and coverage alongside accuracy.', '',
-                 'Sensor conversion is empirical because CSV integer encoding remains unverified. Reconstruction assumes a known initial pose, evaluation-only MoCap clock alignment, symmetric hub markers, and C3D XY as the horizontal plane.', '',
+                 'CSV stores raw register counts; sensor calibration is fitted empirically on training data. Exact flashed binary and range readback remain unavailable. Reconstruction assumes a known initial pose, evaluation-only MoCap clock alignment, symmetric hub markers, and C3D XY as the horizontal plane.', '',
                  'Trial, participant, and maneuver tables and trajectory plots are available in the baseline and selected-model output folders. The participant split, calibration, normalization, model weights, and selection record must accompany any final evaluation.'])
     (out / 'validation_report.md').write_text('\n'.join(text) + '\n', encoding='utf-8')
     fig, ax = plt.subplots(figsize=(7, 4))

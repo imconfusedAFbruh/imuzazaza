@@ -1,0 +1,62 @@
+{
+  "id": "2026-09-24__SL__SL_Trial1_No.10",
+  "old_state": {
+    "id": "2026-09-24__SL__SL_Trial1_No.10",
+    "participant": "No.10",
+    "condition": "SL",
+    "partition": "validation",
+    "setup": "2026-09-24",
+    "gravity": [
+      0.9815979996942389,
+      -0.16463151071599053,
+      -0.09675656399252554
+    ],
+    "gyro_bias": [
+      11.315036071246489,
+      -32.0,
+      -6.0
+    ],
+    "eligible": false,
+    "quiet_seconds": 0.0,
+    "algorithm": "native initial five seconds",
+    "reason": "No contiguous initial stationary candidate"
+  },
+  "fresh_state": {
+    "gravity": [
+      0.9815979996942389,
+      -0.16463151071599053,
+      -0.09675656399252554
+    ],
+    "gyro_bias": [
+      11.315036071246489,
+      -32.0,
+      -6.0
+    ],
+    "eligible": false,
+    "quiet_seconds": 0.0,
+    "algorithm": "native initial five seconds",
+    "reason": "No contiguous initial stationary candidate"
+  },
+  "saved_heading": 3.0471970541519497,
+  "cached_heading": 3.0471970541519497,
+  "baseline_only": true,
+  "candidate_evaluations": 0,
+  "checks": [
+    {
+      "threads": 2,
+      "heading_rmse_deg": 3.0471970643777935,
+      "heading_metric_delta": 1.0225843727340589e-08,
+      "max_motion_delta": 2.0465324657159556e-08,
+      "max_xy_delta": 2.7516336986721512e-09,
+      "max_heading_delta": 6.706670774292434e-10
+    },
+    {
+      "threads": 4,
+      "heading_rmse_deg": 3.0471970541519497,
+      "heading_metric_delta": 0.0,
+      "max_motion_delta": 0.0,
+      "max_xy_delta": 0.0,
+      "max_heading_delta": 0.0
+    }
+  ]
+}

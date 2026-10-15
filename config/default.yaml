@@ -6,7 +6,7 @@ imu:
   firmware_read_convention:
     accel_unit: g
     gyro_unit: deg_s
-    accel_range_g: 2          # Acquisition range confirmed by researcher; CSV encoding remains unknown.
+    accel_range_g: 4          # Firmware/receiver defaults and ~8200 raw counts/g support this range.
     gyro_range_dps: 2000
     accel_to_mps2: 9.80665
     gyro_to_rad_s: 0.017453292519943295
@@ -17,12 +17,15 @@ imu:
     wheel_axis_selection: train_only_per_side
     forward_rotation_sign: train_only_per_side
   csv_storage:
-    format: integer_encoding_unknown
+    format: raw_int16_register_counts
     observed_rest_accel_norm_counts: 8200
     library_float_encoding_verified: false
+    raw_encoding_verified: true
   units:
-    assumed_profile: researcher_range_confirmed_csv_conversion_unverified
-    verified: false
+    assumed_profile: firmware_receiver_audited_raw_counts
+    verified: false           # Nominal sensitivities established; exact acquisition range readback unavailable.
+    accel_sensitivity_g_per_count: 0.000122
+    gyro_sensitivity_dps_per_count: 0.070
 
 # Matsunaga Sport Wheelchair "MP-ADJUST" with WheelSense v.1 mounts.
 chair:

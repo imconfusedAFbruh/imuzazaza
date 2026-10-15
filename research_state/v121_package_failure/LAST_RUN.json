@@ -1,0 +1,18 @@
+{
+  "run_id": "native-v80-4509d3d812334e308bc93ffacb3afa2c",
+  "pid": 20336,
+  "process": {
+    "ProcessId": 20336,
+    "CreationDate": "/Date(1791693159481)/",
+    "CommandLine": "\"C:\\Users\\poon1\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" research_run_guard.py finalize_reservoir_v121.py"
+  },
+  "started_utc": "2026-10-11T04:32:40.390662+00:00",
+  "commands": [
+    "finalize_reservoir_v121.py"
+  ],
+  "stage": "finalize_reservoir_v121.py",
+  "status": "failed",
+  "heartbeat_utc": "2026-10-11T04:32:55.405400+00:00",
+  "error": "RuntimeError('Ridge dependency changed: pipeline.py')",
+  "finished_utc": "2026-10-11T04:32:56.804144+00:00"
+}

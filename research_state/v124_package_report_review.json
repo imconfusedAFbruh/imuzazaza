@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-15T03:50:27.933312+00:00",
+  "scope": "Sealed package metadata and report arithmetic; no fit/inference/validation/test rerun",
+  "hash_counts": {
+    "bundle_outputs": 6,
+    "bundle_inputs": 430,
+    "bundle_dependencies": 22,
+    "report_outputs": 3,
+    "report_inputs": 7
+  },
+  "model_sha256": "ac46f8b82096214da181624f7be0362ddc8494f1b44fa4827c68f01d41421ce7",
+  "full_train_ids": 207,
+  "frozen_prior_normalization_preserved": true,
+  "fits": {
+    "2026-09-24": {
+      "iterations": 12,
+      "prior_weight_L2_change": 0.030779478856734464
+    },
+    "2026-09-25": {
+      "iterations": 12,
+      "prior_weight_L2_change": 0.03686238131221295
+    }
+  },
+  "inference_verification_records": 207,
+  "recorded_maximum_motion_difference": 0.0,
+  "recorded_optical_identity_poisoning_checks_all_passed": true,
+  "grouped_rows_verified": 7100,
+  "groups_without_available_values": 80,
+  "groups_with_partial_availability": 550,
+  "participant_benefits_mm": {
+    "No.1": -0.3788621694411354,
+    "No.13": 0.15308898971777563,
+    "No.15": 0.14110905984793254,
+    "No.16": 2.464219503655274,
+    "No.17": 1.0734193163423333,
+    "No.19": 1.034855384232397,
+    "No.20": 4.30004335820025,
+    "No.3": -1.3866047822198024,
+    "No.4": 1.1122930470679608,
+    "No.6": -0.4924208333068336,
+    "No.7": 4.095663655857701,
+    "No.8": -1.7133247757831342
+  },
+  "participants_improved": 8,
+  "mean_benefit_mm": 0.8669566461808933,
+  "leave_one_person_out_benefit_range_mm": [
+    0.5548578541791336,
+    1.1015276845412594
+  ],
+  "bootstrap_seed": 122,
+  "bootstrap_draws": 4096,
+  "bootstrap_percentile95_mm": [
+    -0.1267963672546642,
+    1.9408074960778563
+  ],
+  "exact_sign_flip_count": 628,
+  "exact_sign_flip_total": 4096,
+  "two_sided_sign_flip_fraction": 0.1533203125,
+  "supplemental_report_input_hashes": {
+    "models\\trial_rmse_v124\\artifact_manifest.json": "9704f48aac00e1f49d8238b32b3403ccf1868ff89cafb821372efd19f944844a",
+    "models\\trial_rmse_v124\\model.json": "ac46f8b82096214da181624f7be0362ddc8494f1b44fa4827c68f01d41421ce7",
+    "models\\trial_rmse_v124\\verification.json": "87ae63b7f74542b9d1af3e507f968cbcd1f5fce097d874e31879e68e4aa02059"
+  },
+  "original_report_provenance_note": "Original sealed report run.json omitted these three bundle inputs; this independent review supplies their hashes without changing the sealed report.",
+  "review_script_sha256": "a2967226605db5cb94364ff4f3e4a77a1d53ff7c72d938990dbaca2b2934dc39",
+  "source_review": {
+    "objective_and_gradient": "pass",
+    "held_exclusions": "pass",
+    "package_uses_existing_sensor_only_loader": "pass",
+    "statistics_selection_independent": "pass",
+    "blockers": []
+  },
+  "declined_checks": [
+    "New fitting or inference repetition: outside independent output review",
+    "Validation/test accuracy: outside v124 protocol",
+    "Acquisition/timing identity: no new linked evidence in this protocol"
+  ],
+  "limitations": [
+    "Inference equivalence/poisoning checks verified from sealed207-record artifacts and reviewed runner; not rerun by reviewer",
+    "Conditional post-selection TRAIN improvement; bootstrap interval includes zero",
+    "No generalization, independent timing or deployment approval established"
+  ]
+}

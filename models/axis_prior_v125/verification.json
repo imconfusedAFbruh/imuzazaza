@@ -1,0 +1,10 @@
+{
+  "recordings": 207,
+  "full_train_fit": true,
+  "maximum_motion_difference": 0.0,
+  "all_optical_identity_poisoning_checks_passed": true,
+  "validation_accessed": false,
+  "test_accessed": false,
+  "note": "Full TRAIN inference reproduction; not held-out accuracy",
+  "runtime_s": 36.055308399983915
+}

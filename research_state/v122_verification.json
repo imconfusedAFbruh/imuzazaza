@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-10-12T07:22:32.386170+00:00",
+  "status": "passed",
+  "review_type": "root arithmetic reconstruction and artifact verification, not independent reviewer",
+  "artifact_counts": {
+    "outputs_reservoir_path_v121": 223,
+    "models/reservoir_path_v121_completed": 4,
+    "outputs_reservoir_stability_v122": 1
+  },
+  "model_dependencies": 15,
+  "stability_input_hashes": 5,
+  "scalar_reconstruction_matches": true,
+  "loader_and_provenance_rejection_tests": "passed",
+  "no_prediction_evaluation_or_validation_test_reads": true,
+  "prediction_artifacts_read_for_hashing_only": true
+}

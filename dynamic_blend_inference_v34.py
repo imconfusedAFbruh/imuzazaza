@@ -14,6 +14,7 @@ from stationary_gravity_experiment_v14 import feature_matrix
 from stationary_gravity_inference_v14 import initialize_startup
 from nonlinear_endpoint_experiment_v21 import nonlinear_features
 from dynamic_tilt_experiment_v33 import dynamic_features
+from legacy_inference_compat_v121 import dependency_matches
 
 
 def _read_sealed(folder, name):
@@ -44,7 +45,7 @@ def load_dynamic_blend(folder=None):
     original_folder = (ROOT/meta['original_parent']).parent
     run = _read_sealed(original_folder, 'run.json')
     for name, expected in run['provenance'].items():
-        if digest(ROOT/name) != expected:
+        if not dependency_matches(name, expected, digest(ROOT/name)):
             raise RuntimeError('Changed original dependency: '+name)
     original = _read_sealed(original_folder, 'model.json')
     dynamic = _read_sealed((ROOT/meta['dynamic_parent']).parent,

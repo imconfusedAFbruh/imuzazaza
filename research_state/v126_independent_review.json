@@ -1,0 +1,177 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-15T04:29:14.725785+00:00",
+  "scope": "Independent saved v126 predictions/core decisions and grouped-report arithmetic; no raw/cache or inference access",
+  "hash_counts": {
+    "output": 156,
+    "input_pins": 524,
+    "inherited_pins": 429,
+    "input_content_rehashed": 169,
+    "input_prior_pin_equality_without_content_access": 355,
+    "source": 3,
+    "model_outputs": {
+      "models/reservoir_path_v121_completed": 4,
+      "models/axis_prior_v125": 6
+    },
+    "report_output": 3,
+    "report_input": 15
+  },
+  "captured_preregistration_sha256": "abfd00d22389316736a9dc95f8664d106dcf9d937e068bf24c7c4de16469b195",
+  "recordings": 71,
+  "participants": 4,
+  "maneuvers": 7,
+  "paired_predictions": 213,
+  "reference_array_comparisons": 355,
+  "control_array_comparisons": 426,
+  "scored_frames": {
+    "v34": 105821,
+    "v121": 105821,
+    "v125": 105821
+  },
+  "historical_control_maximum_differences": {
+    "v34_motion": 0.0,
+    "v34_xy": 0.0,
+    "v34_heading": 0.0,
+    "v121_motion": 2.220446049250313e-16,
+    "v121_xy": 2.220446049250313e-16,
+    "v121_heading": 0.0
+  },
+  "all213_saved_motion_integrations_passed": true,
+  "all_exact_finite_and_scored_masks_passed": true,
+  "model_sha256": {
+    "models/reservoir_path_v121_completed": "6989346d9e4c2ec68ff7ce0c8ab49c219b13fb44d6881f032f7971df97c4af9b",
+    "models/axis_prior_v125": "7a056e2ddc8ebec372a40be0e9a7d2b43088b745838c408643ddcadd749f2eb2"
+  },
+  "decisions": {
+    "v34": {
+      "eligible": true,
+      "failed_guards": [],
+      "baseline": {
+        "trials": 71,
+        "participants": 4,
+        "equal_participant_mean_position_rmse_m": 0.1007021193993738,
+        "equal_participant_mean_heading_rmse_deg": 1.260899060556421
+      },
+      "candidate": {
+        "trials": 71,
+        "participants": 4,
+        "equal_participant_mean_position_rmse_m": 0.09970035227471695,
+        "equal_participant_mean_heading_rmse_deg": 1.2149013857141833
+      },
+      "participant_ratios": {
+        "No.10": 0.9963930648251125,
+        "No.14": 0.9933147197725424,
+        "No.18": 0.9711176293546192,
+        "No.5": 1.007285463292617
+      },
+      "maneuver_ratios": {
+        "10x5": 0.9621528304690834,
+        "AR": 0.9653556271129374,
+        "CR": 0.9268809028025067,
+        "OS": 1.0303495620717065,
+        "PS": 1.036439075173596,
+        "SL": 1.022933132452145,
+        "ST": 1.0134271442034828
+      },
+      "guard_ratios": {
+        "Position_P95_mm": 0.9905615343617229,
+        "Last_Supported_Endpoint_Error_mm": 0.9836885804385004,
+        "heading_rmse_deg": 0.9635199388427338
+      }
+    },
+    "v121": {
+      "eligible": false,
+      "failed_guards": [
+        "OS",
+        "mean_ATE_not_lower"
+      ],
+      "baseline": {
+        "trials": 71,
+        "participants": 4,
+        "equal_participant_mean_position_rmse_m": 0.09930373516586413,
+        "equal_participant_mean_heading_rmse_deg": 1.2037649529071632
+      },
+      "candidate": {
+        "trials": 71,
+        "participants": 4,
+        "equal_participant_mean_position_rmse_m": 0.09970035227471695,
+        "equal_participant_mean_heading_rmse_deg": 1.2149013857141833
+      },
+      "participant_ratios": {
+        "No.10": 1.0032595090908993,
+        "No.14": 1.0036933498113523,
+        "No.18": 1.0054540297013133,
+        "No.5": 1.0029317414462742
+      },
+      "maneuver_ratios": {
+        "10x5": 0.9948311820562248,
+        "AR": 0.9789071239555497,
+        "CR": 0.9500450320358119,
+        "OS": 1.0527649671060733,
+        "PS": 1.0313428414279957,
+        "SL": 1.0100789678157485,
+        "ST": 1.0333844664988534
+      },
+      "guard_ratios": {
+        "Position_P95_mm": 1.0109239383644713,
+        "Last_Supported_Endpoint_Error_mm": 1.0115024764951352,
+        "heading_rmse_deg": 1.0092513349721015
+      }
+    }
+  },
+  "candidate_eligible": false,
+  "best_completed_validation": "v121",
+  "v121_ATE_mm": 99.30373516586413,
+  "v125_ATE_mm": 99.70035227471695,
+  "benefit_vs_v121_mm": -0.39661710885282275,
+  "grouped_rows_verified": 2556,
+  "groups_without_values": 48,
+  "groups_partially_available": 162,
+  "participant_benefits_mm": {
+    "No.10": -0.21873957232135255,
+    "No.14": -0.35237745381865027,
+    "No.18": -0.7076822848571529,
+    "No.5": -0.3076691244141283
+  },
+  "participants_improved": 0,
+  "bootstrap_seed": 122,
+  "bootstrap_draws": 4096,
+  "bootstrap_percentile95_mm": [
+    -0.6076789947463968,
+    -0.25214904269567695
+  ],
+  "leave_one_person_out_benefits_mm": [
+    -0.4559096210299771,
+    -0.4113636605308779,
+    -0.29292871685137706,
+    -0.4262664369990519
+  ],
+  "exact_sign_flip_count": 2,
+  "exact_sign_flip_total": 16,
+  "two_sided_sign_flip_fraction": 0.125,
+  "report_rejection_and_denominators_verified": true,
+  "input_hash_policy": "All524 recorded pins verified; protected raw/cache/older trajectory entries compared to sealed v123 pins without opening those files; remaining inputs rehashed.",
+  "output_manifest_sha256": "2808aa9be7152809e23d7b285f9704cdcba31a1ec2d4db56424662ff705e339b",
+  "report_manifest_sha256": "715d8c423539a4fb17291ae0c2b1b2f11ebd105cb1c2284c76d25dbe65d11d3f",
+  "review_script_sha256": "f7d631c23682703cf465a643aa110afb80e53f5cbcef734a334335cc47882759",
+  "source_review": {
+    "one_frozen_candidate": "PASS",
+    "no_fit_or_retuning": "PASS",
+    "controls_before_candidate": "PASS",
+    "original_tolerances_and_four_CPU_threads": "PASS",
+    "sensor_only_prediction": "PASS",
+    "report_input_coverage": "PASS",
+    "blockers": []
+  },
+  "declined_checks": [
+    "Raw acquisitions, validation caches and older v34 trajectory contents not reopened; saved input pins checked against v123",
+    "Startup gravity/bias recomputation and prediction inference not rerun; sealed142-control audit and reviewed source checked",
+    "Secondary route/filter-derived values aggregated from sealed CSV, not recomputed from input signals",
+    "No test, new fitting, alternative candidate, timing/runtime geometry or deployment evaluation"
+  ],
+  "limitations": [
+    "Previously exposed development validation; no blind final generalization or independent significance claim",
+    "V125 is rejected against the primary v121 control despite passing historical v34 guards",
+    "V121 historical controls have floating-point differences up to2.22e-16 within unchanged v123 tolerances"
+  ]
+}

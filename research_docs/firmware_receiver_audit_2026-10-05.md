@@ -3,6 +3,12 @@
 Date: 2026-10-05  
 Workspace: `C:\Users\poon1\Desktop\kight_recover`
 
+2026-10-08 verification: see `firmware_primary_audit_2026-10-08.md` for
+correct peeled release-tag identities and requirement-level evidence. The
+commits below include intermediate release preparations, not always the tagged
+release commit. Exact flashed binary/runtime range provenance remains unresolved;
+the source/data audit does not prove that provenance.
+
 This report supersedes the unresolved acquisition-source conclusions in
 `research_docs/sensor_timebase_v46.md`. The earlier v46 document correctly
 separated recorded cadence from sensor ODR, but it did not have the actual
@@ -191,7 +197,8 @@ Observed raw data:
 - modal packet size = 10 across all dates;
 - about 90% of adjacent CSV rows share the same PC arrival timestamp;
 - all samples in one notification receive the **same**
-  `time.monotonic_ns()` callback timestamp on Windows.
+  `time.perf_counter_ns()` callback timestamp on Windows. This is a monotonic
+  performance-clock reading; the CSV column is named `timestamp_pc_monotonic_ns`.
 
 Thus `timestamp_pc_monotonic_ns` is a packet-arrival timestamp, not an
 independent physical sample time for every row.
@@ -279,11 +286,12 @@ Consequently:
   v34 score or v42 conditional score;
 - a wholesale ML rerun for a scale conversion error is **not justified**.
 
-The stale +/-2 g text in `config/default.yaml`, `pipeline.settings()` and the
+The stale +/-2 g text formerly in `config/default.yaml`, `pipeline.settings()` and the
 older v46 report is documentation/provenance debt. It is not the numerical
 conversion used by these models. Historical sealed source/artifacts are left
 unchanged so their hashes and reproducibility remain intact. New work should
-reference this audit rather than the stale range metadata.
+reference this audit rather than the stale range metadata. Current config and
+pipeline metadata were corrected on 2026-10-08; sealed copies remain unchanged.
 
 ## Continued research after the audit
 

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "reviewer": "/root/review_v94_v95",
+  "scope": "v121 participant-fold screen",
+  "recordings": 207,
+  "rows": 828,
+  "selected_penalty": 10,
+  "selected_ATE_mm": 129.73981099429271,
+  "baseline_ATE_mm": 132.24020010362922,
+  "all_masks_primary_metrics_guards_hashes": "independently verified",
+  "fit_ids_exclude_held": true,
+  "maximum_Jacobian_check_error": 9.04e-10,
+  "comparator_inventory": "research_state/v121_comparator_inventory.json",
+  "inventory_candidate_groups": 125,
+  "inventory_same_frame_count_groups": 116,
+  "qualification": "Bounded TRAIN inventory, not every model ever tried; equal historical counts alone are not mask proof",
+  "validation_test_accessed": false
+}

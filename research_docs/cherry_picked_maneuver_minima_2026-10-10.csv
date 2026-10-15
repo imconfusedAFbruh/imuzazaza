@@ -1,0 +1,8 @@
+"maneuver","ATE_RMSE_mm","trials","participants","source","interpretation"
+"10x5","136.05507259116962","12","4","outputs_clock_arbitrated_v42/common_native_new_clock_refit_blend_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"AR","73.25916103342783","12","4","outputs_long_horizon_v9/endpoint_44_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"CR","48.787163919799184","12","4","outputs_nonlinear_endpoint_tuning_v22/selected_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"OS","40.14180695742121","3","2","outputs_observed_sync_v9/physics_bootstrap_alignment_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"PS","166.1767598318565","8","4","outputs_clock_refit_v38/common_native_new_clock_refit_blend_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"SL","103.61116124287591","12","4","outputs_clock_refit_v38/own_clock_full_new_clock_refit_blend_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"
+"ST","56.651394141110295","12","4","outputs_clock_arbitrated_v42/own_clock_full_new_clock_refit_blend_maneuvers.csv","Retrospective per-maneuver minimum; differing clocks/support; no composite estimator or promotion"

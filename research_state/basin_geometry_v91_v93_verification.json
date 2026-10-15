@@ -1,0 +1,18 @@
+{
+  "parent_hashes_verified": 658,
+  "grid_channel_points": 9122,
+  "event_count_checks": 9122,
+  "maximum_correlation_difference": 1.1102230246251565e-15,
+  "basin_optima_checked": 12,
+  "reference_role_checks": 207,
+  "no20_preserved": 15,
+  "scored_frames": 318034,
+  "review": "Same-context independent arithmetic, not separate-agent timing review",
+  "clocks_accepted": 199,
+  "clocks_rejected": 8,
+  "fully_nested": false,
+  "promotion": false,
+  "validation_accessed": false,
+  "test_accessed": false,
+  "saved_utc": "2026-10-08T18:33:18.272796+00:00"
+}

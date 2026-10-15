@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-15T04:11:30.613040+00:00",
+  "scope": "Sealed package metadata/report arithmetic; no fit/inference/validation/test rerun",
+  "hash_counts": {
+    "screen_outputs": 224,
+    "bundle_outputs": 6,
+    "bundle_inputs": 451,
+    "bundle_dependencies": 36,
+    "report_outputs": 3,
+    "report_inputs": 12,
+    "reviewed_sources": 4
+  },
+  "model_sha256": "7a056e2ddc8ebec372a40be0e9a7d2b43088b745838c408643ddcadd749f2eb2",
+  "selected": "speed1_yaw10",
+  "penalties": [
+    1.0,
+    10.0
+  ],
+  "full_train_ids": 207,
+  "participants": 12,
+  "no20_recordings": 15,
+  "scored_frames_per_screen_candidate": 314498,
+  "frozen_prior_normalization_preserved": true,
+  "fits": {
+    "2026-09-24": {
+      "iterations": 12,
+      "prior_L2_change": 0.06787457391609128
+    },
+    "2026-09-25": {
+      "iterations": 12,
+      "prior_L2_change": 0.13303341351728473
+    }
+  },
+  "inference_verification_records": 207,
+  "recorded_maximum_motion_difference": 0.0,
+  "recorded_optical_identity_poisoning_checks_all_passed": true,
+  "grouped_rows_verified": 8520,
+  "groups_without_available_values": 96,
+  "groups_with_partial_availability": 660,
+  "report_input_coverage_complete": true,
+  "bundle_claim_input_hashes": {
+    "model.json": "7a056e2ddc8ebec372a40be0e9a7d2b43088b745838c408643ddcadd749f2eb2",
+    "artifact_manifest.json": "1a3dcd7506e62cfb9f4b35e9a3439d2aaf2b1861697b161fd45d4b4b1051ef61",
+    "verification.json": "d40314f14eaefff57a5d23c9ff29831b881f355494658cfe1a67133e0ddec10a"
+  },
+  "participant_benefits_mm": {
+    "No.1": 0.5680346222747684,
+    "No.13": 0.6198449582067445,
+    "No.15": 0.3486707126226507,
+    "No.16": 1.780805154451226,
+    "No.17": 3.9803938780488686,
+    "No.19": 3.1276781696222002,
+    "No.20": 4.698571352816941,
+    "No.3": 0.08716033294728365,
+    "No.4": -0.5662841789120521,
+    "No.6": 0.24800026243154694,
+    "No.7": 1.1813463254737033,
+    "No.8": 0.02050600613716369
+  },
+  "participants_improved": 11,
+  "mean_benefit_mm": 1.3412272996767538,
+  "leave_one_person_out_benefit_range_mm": [
+    1.0360142039367366,
+    1.5146374340939182
+  ],
+  "bootstrap_seed": 122,
+  "bootstrap_draws": 4096,
+  "bootstrap_percentile95_mm": [
+    0.47660653872152386,
+    2.3121062306913256
+  ],
+  "exact_sign_flip_count": 26,
+  "exact_sign_flip_total": 4096,
+  "two_sided_sign_flip_fraction": 0.00634765625,
+  "screen_review_sha256": "dcefee9ecc24189630c5e9cfff40dbecc3c1219f10ef43397cefcf13cd4feaf8",
+  "review_script_sha256": "3b48f3598cdcf6bbcd227e0f62caa8c3ec92f6ff02871abb779728c76a3804f7",
+  "source_review": {
+    "frozen_training_prior": "PASS",
+    "package_pre_fit_source_pins": "PASS",
+    "actual_public_loader_and_poisoning_runner": "PASS",
+    "report_grouping_and_statistics": "PASS",
+    "blockers": []
+  },
+  "declined_checks": [
+    "Saved inference/poisoning records checked without rerunning predictions",
+    "Training objective values not recomputed; frozen source/prior and finite monotone histories checked",
+    "Grouped diagnostic values reconstructed from sealed CSV, not independently recomputed from raw inputs",
+    "No raw acquisition, validation/test accuracy, timing/runtime geometry or deployment evaluation"
+  ],
+  "limitations": [
+    "Conditional post-selection TRAIN improvement; no independent significance claim",
+    "Saved public-loader equivalence is full-TRAIN reproduction, distinct from participant-fold accuracy"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "run_id": "native-v80-3cf9c44941e04b299a1953c4863b807c",
+  "pid": 49888,
+  "process": {
+    "ProcessId": 49888,
+    "CreationDate": "/Date(1792036969391)/",
+    "CommandLine": "\"C:\\Users\\poon1\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" research_run_guard.py axis_prior_v125.py"
+  },
+  "started_utc": "2026-10-15T04:02:50.016866+00:00",
+  "commands": [
+    "axis_prior_v125.py"
+  ],
+  "stage": "axis_prior_v125.py",
+  "status": "running",
+  "heartbeat_utc": "2026-10-15T04:03:20.034532+00:00"
+}

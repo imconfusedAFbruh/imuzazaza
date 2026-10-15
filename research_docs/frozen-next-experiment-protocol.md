@@ -1,5 +1,33 @@
 # Frozen next-experiment protocol - 4 October 2026
 
+## Current status correction — 15 October 2026
+
+This is a historical proposal, not an active authorization for the model sweep
+below. The completed v123 comparison now establishes frozen v121 at 99.303735166
+mm versus v34 at 100.702119399 mm on matched exposed validation; all guards pass.
+See [review closure](frozen_validation_review_v123.md). Do not repeat that
+comparison or use its outcomes to tune another candidate. The v21/v31 status,
+unverified serialization and +/-2 g statements below describe the October 4
+knowledge state and are superseded.
+
+The [completed firmware audit](firmware_receiver_audit_2026-10-05.md) and
+[release verification](firmware_primary_audit_2026-10-08.md) establish a raw int16
+receiver path and support +/-4 g, +/-2000 dps, 104 Hz sensor ODR and approximately
+102.4 Hz recorded polling. They do not establish each board's exact flashed
+binary or runtime range registers. Do not rescale frozen inputs or replace device
+timestamps with nominal row timing.
+
+The remaining acquisition work is to link firmware/binary identity and runtime
+register readback to each recording, preserve original START/STOP/SYNC journals,
+and record shared hardware timing events near both ends of each capture.
+Full mounting/marker geometry and independent reference uncertainty measurements
+also remain necessary. Existing metadata searches did not establish independent
+clock mappings; repeat them only when new linked evidence arrives. A new final
+cohort must remain unopened until its model, acquisition/QC protocol, sample-size
+justification and analysis are frozen. The historical ablation list below is not
+a newly approved search budget. No new acquisition evidence was supplied in this
+continuation, and no numerical task was executed.
+
 ## Decision and status
 Stop additional fitting or candidate selection against the reused 71 recordings. Freeze v21, v24, v25 and all completed v26-v31 candidates. v21 remains the lowest observed overall RMSE comparator; v31 is a stricter conditional pivot candidate, not a new blind best model. No final test data were accessed during this diagnostic update. Prior historical test exposure remains disclosed and cannot be undone by a new split label.
 

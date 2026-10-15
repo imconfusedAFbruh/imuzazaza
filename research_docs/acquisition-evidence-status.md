@@ -1,5 +1,15 @@
 # Acquisition evidence status
 
+Current-status note, 15 October 2026: this October 3 evidence log is historical.
+Its unresolved serialization and +/-2 g assumptions are superseded by the
+[firmware/receiver audit](firmware_receiver_audit_2026-10-05.md) and
+[release verification](firmware_primary_audit_2026-10-08.md): raw int16 is preserved;
+source and data support +/-4 g and +/-2000 dps. Exact flashed binary/runtime
+range provenance, independent clock linkage and full geometry remain unresolved.
+No frozen conversion changes follow from this documentation correction. Use the
+[current protocol status](frozen-next-experiment-protocol.md) for remaining gates
+and the [v123 review closure](frozen_validation_review_v123.md) for the latest result.
+
 Updated 2026-10-03 (Asia/Bangkok), following the researcher's supplied status table.
 
 ## Evidence available versus independently inspected

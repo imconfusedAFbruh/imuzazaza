@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "reviewer": "/root/review_v94_v95",
+  "trial_configuration_rows": 828,
+  "recordings": 207,
+  "source_output_supplement_parent_hashes": "verified",
+  "motion_shrinkage_support_primary_metrics_eligibility": "independently reproduced",
+  "selected_gain": 0.075,
+  "selected_ATE_mm": 146.2964289820147,
+  "ST_ratio": 1.041275438020568,
+  "package_parameters_fitting_held_ids": "exact frozen parents",
+  "sensor_inference_reproductions": 207,
+  "max_motion_error": 8.881784197001252e-16,
+  "review_limit": "Reviewer verified exported parameters/code and reproduction report, did not independently rerun sensor inference",
+  "validation_test_accessed": false,
+  "promoted_over_v34": false
+}

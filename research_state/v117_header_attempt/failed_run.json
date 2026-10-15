@@ -1,0 +1,18 @@
+{
+  "run_id": "native-v80-be61ba8912384cb19d17c832681e560e",
+  "pid": 26992,
+  "process": {
+    "ProcessId": 26992,
+    "CreationDate": "/Date(1791690234981)/",
+    "CommandLine": "\"C:\\Users\\poon1\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" research_run_guard.py reference_timing_metadata_v117.py"
+  },
+  "started_utc": "2026-10-11T03:43:56.043549+00:00",
+  "commands": [
+    "reference_timing_metadata_v117.py"
+  ],
+  "stage": "reference_timing_metadata_v117.py",
+  "status": "failed",
+  "heartbeat_utc": "2026-10-11T03:43:56.044642+00:00",
+  "error": "TypeError('Header')",
+  "finished_utc": "2026-10-11T03:43:56.506980+00:00"
+}

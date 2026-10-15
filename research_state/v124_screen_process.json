@@ -1,0 +1,17 @@
+{
+  "run_id": "native-v80-e4f56108ffd0486eb3e919645078aa12",
+  "pid": 13824,
+  "process": {
+    "ProcessId": 13824,
+    "CreationDate": "/Date(1792035695978)/",
+    "CommandLine": "\"C:\\Users\\poon1\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" research_run_guard.py trial_rmse_v124.py"
+  },
+  "started_utc": "2026-10-15T03:41:36.790821+00:00",
+  "commands": [
+    "trial_rmse_v124.py"
+  ],
+  "stage": "trial_rmse_v124.py",
+  "status": "complete",
+  "heartbeat_utc": "2026-10-15T03:44:06.899946+00:00",
+  "finished_utc": "2026-10-15T03:44:18.959645+00:00"
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Conservative joint robust motion v120",
+  "status": "accepted TRAIN development model; not validation-promoted",
+  "gain": 0.075,
+  "delta": 3,
+  "selected": {
+    "gain": 0.075,
+    "eligible": true,
+    "trials": 207,
+    "participants": 12,
+    "equal_participant_mean_position_rmse_m": 0.1462964289820147,
+    "equal_participant_mean_heading_rmse_deg": 1.8290096035482133,
+    "participant_ratios": {
+      "No.1": 0.9918583374104559,
+      "No.13": 0.9905081270888413,
+      "No.15": 0.978089201284812,
+      "No.16": 1.0003355404249274,
+      "No.17": 0.9933114254262095,
+      "No.19": 0.9872506544113878,
+      "No.20": 0.992997193596555,
+      "No.3": 0.9907090593064458,
+      "No.4": 0.9617929645049063,
+      "No.6": 0.9964191233159913,
+      "No.7": 0.9909448404131166,
+      "No.8": 0.9865765702007127
+    },
+    "maneuver_ratios": {
+      "10x5": 0.9904590448149025,
+      "AR": 0.9818761122865791,
+      "CR": 0.978631203365058,
+      "OS": 0.9463103636273564,
+      "PS": 0.9931496177112149,
+      "SL": 0.9797964876709284,
+      "ST": 1.041275438020568
+    },
+    "guard_ratios": {
+      "Position_P95_mm": 0.9883478538719692,
+      "Last_Supported_Endpoint_Error_mm": 0.9879614195743212,
+      "heading_rmse_deg": 0.9958318849745533
+    }
+  },
+  "verified_recordings": 207,
+  "max_motion_error": 8.881784197001252e-16,
+  "inputs": [
+    "t",
+    "raw Nx18 IMU counts",
+    "imu_valid",
+    "known setup calibration"
+  ],
+  "outputs": [
+    "forward m/s",
+    "lateral m/s=0",
+    "yaw rad/s"
+  ],
+  "caveats": [
+    "research fold replicas, not a full-data refit",
+    "offline projected gravity filter",
+    "inherited calibration/clocks/crop dependencies",
+    "initial pose required separately for trajectory",
+    "validation/test not evaluated"
+  ],
+  "sources": {
+    "conservative_robust_inference_v120.py": "0591778eb213d570415314830e4dd56ac8c6056e373ef59bf89b225237034e98",
+    "package_conservative_robust_v120.py": "4f27ab9e2c8265317c726591ed0d410fd0ad43db53296e1025d7a93c02703452",
+    "braking_hysteresis_folds_v56.py": "2163c46a7c219a332aa35480f147f62607fa0f6a62d09d0024d4b30b47ad9088",
+    "projected_yaw_folds_v52.py": "1485ece578fb456c0c5141e6371907c0558287fff14b8cfd8cc4ebdb64285874",
+    "pipeline.py": "e3a7b405a8454e114a638a1824c95a53b4eb0d23df77de778f9bc969d5b6c040"
+  },
+  "parent_manifest_sha256": "9a944479c020b567b0544dd4b7ec3c3c87c01c67b74ca8cb88e6bc11bc694095"
+}

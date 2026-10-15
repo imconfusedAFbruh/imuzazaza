@@ -1,0 +1,54 @@
+{
+  "run_time_utc": "2026-10-08T07:13:17.466093+00:00",
+  "script_source_checks": 3,
+  "artifact_hashes_verified": 412,
+  "synthetic_check": true,
+  "lock_released": true,
+  "shared_dependency_sha256": {
+    "pipeline.py": "e3a7b405a8454e114a638a1824c95a53b4eb0d23df77de778f9bc969d5b6c040",
+    "observed_sync_experiment.py": "79d5293a3f79849326bb8996959afd7b2fa0f8fa921486e913f2f38e7715c2c0",
+    "observed_reference_experiment.py": "a565f7feab33412ba508f9785d44144292a5ade272a2f1ceeb0dead0ad3e4866",
+    "participant_folds_experiment_v24.py": "1ab954122c41533be75c0008013b75eeea1af2ad88cd6dcb8d7a7761ae1031b8",
+    "research_run_guard.py": "45c41fa4d560ff5f06858d416d3c9858b40123e953e4eb92bad70634968875f7",
+    "native_projection_v80.py": "e98d66d619e9f0c6714c0b954eea473090b60278305247c16dd1b8065af60e13",
+    "projected_yaw_folds_v52.py": "1485ece578fb456c0c5141e6371907c0558287fff14b8cfd8cc4ebdb64285874",
+    "audit_fold_routes_v59.py": "0276e7f850023f654f07cef12dc473f860d9109242d0de3ac059c21f1cfc7f95",
+    "research_docs/seedless_clock_v83_v85.md": "31f0f6d492cc94ec69b756251bf93ce027c1748a69bae2323a16a422ef638b27"
+  },
+  "separate_context_review": {
+    "v83_hashes": 402,
+    "v84_hashes": 6,
+    "fit_counts": [
+      126,
+      125,
+      129
+    ],
+    "held_counts": [
+      68,
+      69,
+      70
+    ],
+    "seed_counts": [
+      190,
+      17
+    ],
+    "held_clock_counts": [
+      199,
+      8
+    ],
+    "axes_signs": "L gz positive; R gz negative; C gx positive",
+    "decision": "diagnostic only; no promotion",
+    "limitations": [
+      "Inherited reference geometry and accepted TRAIN selection",
+      "Unverified independent timing ground truth",
+      "Offline sensor feature filtering may cross interpolated sensor gaps"
+    ],
+    "alias_deltas_s": {
+      "No.13 10x5Trial3": 4.8517,
+      "No.19 OS1": 0.5821
+    }
+  },
+  "git_head": "87b85e6",
+  "commit_push": "none: no promoted improvement",
+  "next": "v86 distributed signal/event basin audit using fresh fold fits"
+}

@@ -1,0 +1,9 @@
+{
+  "sha256": {
+    "fold_0.json": "3c61cfa1f3b1d28c2a7e8705a61d39278587ced7998fed7edbf6727f5d706179",
+    "fold_1.json": "0468f26bd39287e051d2bed45451ae5059a579bb534363659d9ee3dfa4f02f4e",
+    "fold_2.json": "31014701d177c96baea4bcde69c4259ffd87b723410a2c6cada4f8596464abbe",
+    "model_card.json": "390af10f4dc89b07c8ee45b1eec96f29d3dacfaafc5dfec8c80fe6ca0e5465da",
+    "README.md": "a8551a10894ec21547a58862dedb9ae3e04dea293369bb5d8ebcaf46feb0df7e"
+  }
+}

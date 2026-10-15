@@ -1,0 +1,8 @@
+{
+  "reused_coefficients": true,
+  "source_model_sha256": "1a0df1db3a8a73857b0535a0b101a645362095827c8f1e2691f7a4b9dff23d0d",
+  "recordings": 207,
+  "maximum_motion_difference": 0,
+  "optical_and_identity_poisoning_invariant": true,
+  "note": "Full TRAIN inference reproduction only; these are not held-out accuracy results"
+}

@@ -1,0 +1,18 @@
+{
+  "time_utc": "2026-10-08T06:55:03.903695+00:00",
+  "manifest_file_counts": {
+    "outputs_native_projection_v80": 417,
+    "outputs_native_refit_v81": 216,
+    "outputs_native_review_v82": 4
+  },
+  "source_hashes_valid": true,
+  "active_lock": false,
+  "HEAD": "87b85e6e5a379554cb9b27a1809f1c4919e11e0c",
+  "promoted": false,
+  "pushed": false,
+  "cycles_complete": [
+    "v80",
+    "v81",
+    "v82"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "reviewer": "/root/review_v94_v95",
+  "status": "passed",
+  "prediction_files": 207,
+  "unique_trial_configuration_rows": 828,
+  "all_train_ids_present": true,
+  "no20_recordings": 15,
+  "fit_id_counts": [139, 138, 137],
+  "held_people_excluded": true,
+  "source_supplement_output_hashes_match": true,
+  "manifest_coverage_exact": true,
+  "identical_scored_masks": true,
+  "independently_reproduced": ["frame_count", "ATE", "heading_RMSE", "position_P95", "last_supported_endpoint", "participant_maneuver_aggregate_ratios", "eligibility"],
+  "selected_delta": 0,
+  "all_candidates_rejected_reason": "ST ratio exceeds preregistered1.05 guard",
+  "not_independently_reconstructed": "Every supplementary diagnostic",
+  "fits_rerun": false,
+  "validation_test_accessed": false
+}

@@ -1,0 +1,129 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-15T03:46:42.650905+00:00",
+  "scope": "Independent sealed TRAIN screen output review; no fit or inference rerun",
+  "hash_counts": {
+    "output": 224,
+    "input": 636,
+    "source": 17
+  },
+  "prior_dependency_source_differences": [],
+  "recordings": 207,
+  "participants": 12,
+  "no20_recordings": 15,
+  "candidates": 5,
+  "paired_prediction_sets": 1035,
+  "scored_frames": {
+    "v34": 314498,
+    "v121": 314498,
+    "lambda_0.1": 314498,
+    "lambda_1": 314498,
+    "lambda_10": 314498
+  },
+  "baseline_array_comparisons": 1242,
+  "folds": [
+    {
+      "fold": 0,
+      "fitting": 139,
+      "held": 68
+    },
+    {
+      "fold": 1,
+      "fitting": 138,
+      "held": 69
+    },
+    {
+      "fold": 2,
+      "fitting": 137,
+      "held": 70
+    }
+  ],
+  "selected": {
+    "candidate": "lambda_10",
+    "eligible": true,
+    "ATE_mm": 128.87285434811182,
+    "max_guard_ratios": {
+      "v34_participant_ratios": 1.0495603594513798,
+      "v34_maneuver_ratios": 1.0055800695233474,
+      "v34_metric_ratios": 0.9759752784667644,
+      "v121_participant_ratios": 1.021586962786154,
+      "v121_maneuver_ratios": 1.0055463575695371,
+      "v121_metric_ratios": 0.9943767648952989
+    }
+  },
+  "candidates_reviewed": [
+    {
+      "candidate": "v121",
+      "eligible": true,
+      "ATE_mm": 129.73981099429272,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.0335586654229503,
+        "v34_maneuver_ratios": 1.0026380933738461,
+        "v34_metric_ratios": 0.9816920923242007,
+        "v121_participant_ratios": 1.0,
+        "v121_maneuver_ratios": 1.0,
+        "v121_metric_ratios": 1.0
+      }
+    },
+    {
+      "candidate": "lambda_0.1",
+      "eligible": false,
+      "ATE_mm": 129.25041469107154,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.2249807952337006,
+        "v34_maneuver_ratios": 1.0821476833837544,
+        "v34_metric_ratios": 1.0595074357813057,
+        "v121_participant_ratios": 1.23265424214685,
+        "v121_maneuver_ratios": 1.1470935732010148,
+        "v121_metric_ratios": 1.0792665481015271
+      }
+    },
+    {
+      "candidate": "lambda_1",
+      "eligible": false,
+      "ATE_mm": 126.77535778245463,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.0704903318731256,
+        "v34_maneuver_ratios": 1.023781473714924,
+        "v34_metric_ratios": 0.9590934730980673,
+        "v121_participant_ratios": 1.0771960294355931,
+        "v121_maneuver_ratios": 1.0237471515611745,
+        "v121_metric_ratios": 0.97717666220982
+      }
+    },
+    {
+      "candidate": "lambda_10",
+      "eligible": true,
+      "ATE_mm": 128.87285434811182,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.0495603594513798,
+        "v34_maneuver_ratios": 1.0055800695233474,
+        "v34_metric_ratios": 0.9759752784667644,
+        "v121_participant_ratios": 1.021586962786154,
+        "v121_maneuver_ratios": 1.0055463575695371,
+        "v121_metric_ratios": 0.9943767648952989
+      }
+    }
+  ],
+  "baseline_v121_ATE_mm": 129.73981099429272,
+  "benefit_vs_v121_mm": 0.8669566461809097,
+  "output_manifest_sha256": "e00ab4b33d90b0af6daaef8d63b41fdeb1c7c3317c9cf47ba03b5f7b3fcbe3b3",
+  "review_script_sha256": "38bab39ff20e737d86b3e1b16a68fc0b691d93da348182c75f54c0590cb89e14",
+  "checks": [
+    "all output/input/source hashes; exact file coverage",
+    "frozen v121 dependencies unchanged",
+    "exact207 IDs/all15 No20; all3 fitting exclusions",
+    "frozen normalization and permitted penalties/history",
+    "all207 controls vs sealed v121 motions/XY/headings and label arrays",
+    "all1035 exact paired supports and finite supported predictions",
+    "caps .05 m/s and .02 rad/s; unchanged lateral motion",
+    "direct trial XY RMSE/heading/P95/last-supported endpoint",
+    "direct equal-person summary and every guard vs both controls",
+    "candidate eligibility and selected winner reconstructed"
+  ],
+  "limitations": [
+    "Conditional post-selection TRAIN result; no generalization claim",
+    "Package/report review deferred; no validation/test/raw acquisition access",
+    "Synthetic tests reported passing by coordinator; child execution blocked"
+  ]
+}

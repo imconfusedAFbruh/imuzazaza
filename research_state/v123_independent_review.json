@@ -1,0 +1,60 @@
+{
+  "reviewed_utc": "2026-10-14T10:29:20.750589+00:00",
+  "review_type": "Independent saved-artifact arithmetic and source review; no inference rerun",
+  "passed": true,
+  "output_artifacts_hash_verified": 153,
+  "input_files_hash_verified": 429,
+  "distinct_records": 71,
+  "participants": 4,
+  "maneuvers": 7,
+  "matched_scored_frames": 105821,
+  "exact_historical_references_and_baseline_motion_xy_heading": true,
+  "exact_baseline_candidate_finite_support": true,
+  "candidate_finite_on_all_scored_support": true,
+  "metric_max_absolute_differences": {
+    "position_rmse_m": 0,
+    "Position_P95_mm": 0,
+    "Last_Supported_Endpoint_Error_mm": 0,
+    "heading_rmse_deg": 0,
+    "scored_frames": 0,
+    "reconstruction_coverage": 0,
+    "reference_coverage": 0
+  },
+  "baseline_equal_person_ATE_mm": 100.7021193993738,
+  "candidate_equal_person_ATE_mm": 99.30373516586414,
+  "improvement_mm": 1.3983842335096586,
+  "improvement_pct": 1.3886343622658195,
+  "participant_ratios": {
+    "No.10": 0.9931558642568873,
+    "No.14": 0.9896595608202838,
+    "No.18": 0.9658498555554109,
+    "No.5": 1.0043409951708824
+  },
+  "maneuver_ratios": {
+    "10x5": 0.9671518623696552,
+    "AR": 0.9861565040125014,
+    "CR": 0.9756178618358039,
+    "OS": 0.978708063304971,
+    "PS": 1.0049413575591837,
+    "SL": 1.0127259006928861,
+    "ST": 0.9806874179529843
+  },
+  "guard_ratios": {
+    "Position_P95_mm": 0.9798576300055847,
+    "Last_Supported_Endpoint_Error_mm": 0.9725023945042526,
+    "heading_rmse_deg": 0.9546878021908867
+  },
+  "eligible": true,
+  "frozen_model_sha256": "6989346d9e4c2ec68ff7ce0c8ab49c219b13fb44d6881f032f7971df97c4af9b",
+  "cpu_original_producer_four_thread_restoration_reviewed": true,
+  "failed_attempts_preserved": true,
+  "no_threshold_relaxation": true,
+  "no_fitting_or_retuning_or_test_calls_in_evaluation_route": true,
+  "limitations": [
+    "Previously exposed development validation, not independent final data",
+    "No inference rerun by reviewer; startup fresh reconstruction relies on sealed runner audit and source review",
+    "Supplementary route and RTE metrics not independently recomputed in this review",
+    "All genuine acquisition endpoints remain unavailable; last-supported endpoint is distinct",
+    "Eligibility is conditional validation evidence, not deployment promotion"
+  ]
+}

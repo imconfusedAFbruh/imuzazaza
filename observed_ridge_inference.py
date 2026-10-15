@@ -7,6 +7,7 @@ from pipeline import ROOT, digest
 from learning import load_predictor
 from observed_reference_experiment import load_planar
 from observed_ridge_experiment import imu_features
+from legacy_inference_compat_v121 import dependency_matches
 
 
 def load_observed_ridge(folder=None):
@@ -14,7 +15,7 @@ def load_observed_ridge(folder=None):
     folder = ROOT/'outputs_observed_ridge_v8' if folder is None else folder
     selection = json.loads((folder/'selection.json').read_text())
     for name, sha in selection['provenance'].items():
-        if digest(ROOT/name) != sha:
+        if not dependency_matches(name, sha, digest(ROOT/name)):
             raise RuntimeError(f'Ridge dependency changed: {name}')
     manifest = json.loads((folder/'artifact_manifest.json').read_text())
     for name in ('selection.json','linear_artifacts.npz','normalization.json'):

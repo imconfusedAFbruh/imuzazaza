@@ -1,0 +1,71 @@
+{
+  "reviewed_utc": "2026-10-14T10:30:26.837683+00:00",
+  "passed": true,
+  "report_output_hashes_verified": 2,
+  "sealed_source_input_hashes_verified": 3,
+  "report_script_and_markdown_hashes_verified": true,
+  "grouped_rows_independently_checked": 1704,
+  "duplicate_or_missing_group_metric_rows": 0,
+  "all_availability_denominators_verified": true,
+  "largest_aggregate_absolute_difference": 5.684341886080802e-14,
+  "aggregation": "Participant means followed by unweighted mean of available participants; missing numeric data excluded, never zero-imputed",
+  "all_missing_genuine_endpoint_fields_absent_from_numeric_group_table_and_blank_in_all_trial_rows": {
+    "baseline": [
+      "Endpoint_Error_mm",
+      "Endpoint_Drift_pct"
+    ],
+    "candidate": [
+      "Endpoint_Error_mm",
+      "Endpoint_Drift_pct"
+    ]
+  },
+  "RTE_availability": {
+    "baseline RTE_1s_mm": {
+      "available_trials": 71,
+      "total_trials": 71,
+      "available_participants": 4,
+      "total_participants": 4,
+      "missing_trials": 0
+    },
+    "baseline RTE_5s_mm": {
+      "available_trials": 39,
+      "total_trials": 71,
+      "available_participants": 4,
+      "total_participants": 4,
+      "missing_trials": 32
+    },
+    "baseline RTE_10s_mm": {
+      "available_trials": 4,
+      "total_trials": 71,
+      "available_participants": 2,
+      "total_participants": 4,
+      "missing_trials": 67
+    },
+    "candidate RTE_1s_mm": {
+      "available_trials": 71,
+      "total_trials": 71,
+      "available_participants": 4,
+      "total_participants": 4,
+      "missing_trials": 0
+    },
+    "candidate RTE_5s_mm": {
+      "available_trials": 39,
+      "total_trials": 71,
+      "available_participants": 4,
+      "total_participants": 4,
+      "missing_trials": 32
+    },
+    "candidate RTE_10s_mm": {
+      "available_trials": 4,
+      "total_trials": 71,
+      "available_participants": 2,
+      "total_participants": 4,
+      "missing_trials": 67
+    }
+  },
+  "no_inference_or_raw_data_access": true,
+  "limitations": [
+    "Aggregate arithmetic verified from sealed trial metrics; route and RTE per-record algorithms not independently recomputed",
+    "Means of count columns are mean counts, not dataset totals, as explicitly documented"
+  ]
+}

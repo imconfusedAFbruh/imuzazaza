@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "reviewer": "/root/audit_package",
+  "reviewed_utc": "2026-10-11T19:27:13.349020+00:00",
+  "scope": "v121 completed inference package; no new model evaluation",
+  "bundle": "models/reservoir_path_v121_completed",
+  "sealed_artifacts": 4,
+  "pinned_dependencies": 15,
+  "recordings": 207,
+  "maximum_motion_difference": 0.0,
+  "coefficients_normalization_training_ids_penalty_and_fold_selection_identical": true,
+  "original_partial_model_seal_valid": true,
+  "legacy_prediction_AST_unchanged": true,
+  "archived_legacy_loader_bytes_match_git_HEAD": true,
+  "exact_hash_transitions_and_rejection_tests_pass": true,
+  "all_trial_ids_unique_and_match_training_protocol": true,
+  "optical_and_identity_poisoning_checks_present_for_all_207": true,
+  "guarded_completion_verified": true,
+  "validation_test_evaluated": false,
+  "limitations": "Reviewer audited source, saved verification records and hashes; did not independently rerun all 207 inferences. Full-TRAIN reproduction is not held-out accuracy. Legacy timing/calibration/exposure limits remain."
+}

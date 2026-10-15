@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "fit_checkpoint.json": "da23477ef3fd25a56ed98d896bb0025f9a9de26f46793df7058376ac0ac645a9",
+    "inputs.json": "6aad332398643137aebcd16f05449cea9156ccf8ac2aa448ea33d23680c47d93",
+    "model.json": "ac46f8b82096214da181624f7be0362ddc8494f1b44fa4827c68f01d41421ce7",
+    "README.md": "6020edfe07801537e5980f23b84cabfac152682ac78d80adba4c73399349e6f6",
+    "trial_verification.json": "fb8b0a4ccd471a2a1876bdc77ed609f7a8d5c2038c590c8a0c15b037fce4392e",
+    "verification.json": "87ae63b7f74542b9d1af3e507f968cbcd1f5fce097d874e31879e68e4aa02059"
+  }
+}

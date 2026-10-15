@@ -8,6 +8,7 @@ tmp/
 c3d/
 imu3/
 samplerawdata/
+outdatedwithonly_2imu/
 *.c3d
 .env
 .env.*

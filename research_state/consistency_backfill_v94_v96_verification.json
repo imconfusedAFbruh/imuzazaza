@@ -1,0 +1,11 @@
+{
+  "output_hashes_verified": 22,
+  "summary_rows_checked": 280,
+  "source_recording_masks_checked": 828,
+  "window_csv_complete_unique": 90,
+  "models": 14,
+  "no20_trials_per_model": 15,
+  "scored_frames_per_model": 314621,
+  "review": "Separate-context read-only review plus root independent supplementary accounting",
+  "full_goal_complete": false
+}

@@ -1,0 +1,18 @@
+{
+  "run_id": "native-v80-7bad307671ac469689fc5315f7f68078",
+  "pid": 33608,
+  "process": {
+    "ProcessId": 33608,
+    "CreationDate": "/Date(1791973575416)/",
+    "CommandLine": "\"C:\\Users\\poon1\\AppData\\Local\\Programs\\Python\\Python313\\python.exe\" research_run_guard.py frozen_validation_v123.py"
+  },
+  "started_utc": "2026-10-14T10:26:15.988947+00:00",
+  "commands": [
+    "frozen_validation_v123.py"
+  ],
+  "stage": "frozen_validation_v123.py",
+  "status": "failed",
+  "heartbeat_utc": "2026-10-14T10:26:15.989813+00:00",
+  "error": "ValueError('Historical trial metric mismatch: heading_rmse_deg')",
+  "finished_utc": "2026-10-14T10:26:22.991031+00:00"
+}

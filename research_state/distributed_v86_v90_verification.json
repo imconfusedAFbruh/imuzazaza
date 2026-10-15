@@ -1,0 +1,22 @@
+{
+  "verified_utc": "2026-10-08T18:20:39.435996+00:00",
+  "artifact_hash_counts": {
+    "outputs_distributed_clock_candidates_v86": 5,
+    "outputs_distributed_clock_evidence_v87": 20,
+    "outputs_distributed_clock_review_v88": 2,
+    "outputs_clock_observability_v89": 3,
+    "outputs_clock_observability_review_v90": 2
+  },
+  "source_hashes": {
+    "distributed_clock_candidates_v86.py": "c02c36ae0ea6a176451f59314a0abe6e480acfcd9bfe3b84927040a31bedc4a6",
+    "distributed_clock_evidence_v87.py": "36115f3acc6adbaa6e30e93b7f270eb8aab5933f3360c3deb3f6a91c58eef862",
+    "review_distributed_clock_v88.py": "54ef734a11975cf4e657ed5e6b11aa957cb8371d6e3d83b852ec95dcddfea49c",
+    "clock_observability_v89.py": "a80d5503a97c0a102ce738f81960db97bae9ed22debf3c74e129d4222fe9444f",
+    "review_clock_observability_v90.py": "b464e673f685c93c301c06664fe312fb5b759e5d5c2774f6808ecdbde595c1b4"
+  },
+  "preregistrations_unchanged": true,
+  "active_lock": false,
+  "retained_best_ate_mm": 100.702119399,
+  "retained_best_route_mm": 49.726226563,
+  "decision": "No estimator promotion; incomplete clock coverage and boundary uncertainty"
+}

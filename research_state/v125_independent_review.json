@@ -1,0 +1,273 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-15T04:08:51.981902+00:00",
+  "scope": "Independent sealed TRAIN screen arithmetic; no fit or inference rerun",
+  "hash_counts": {
+    "output": 224,
+    "input": 642,
+    "source": 20,
+    "frozen_v124_output": 224
+  },
+  "source_review": {
+    "axis_loss_gradient_GN_IRLS": "PASS",
+    "frozen_prior_use": "PASS by reviewed source and sealed fold metadata",
+    "package_pre_fit_source_pin_fix": "PASS",
+    "blockers": []
+  },
+  "recordings": 207,
+  "participants": 12,
+  "no20_recordings": 15,
+  "candidates": 6,
+  "paired_prediction_sets": 1242,
+  "scored_frames": {
+    "v34": 314498,
+    "v121": 314498,
+    "v124": 314498,
+    "speed1_yaw10": 314498,
+    "speed10_yaw1": 314498,
+    "speed3_yaw3": 314498
+  },
+  "exact_control_array_comparisons": 1863,
+  "directly_reconstructed_metric_values": 64584,
+  "folds": [
+    {
+      "fold": 0,
+      "fitting": 139,
+      "held": 68,
+      "fits": [
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.08110437439702764
+        },
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.13067386714053902
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.12225591278703728
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.12673827654568784
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.07623329015193604
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.08469880657192184
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "fitting": 138,
+      "held": 69,
+      "fits": [
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-24",
+          "iterations": 10,
+          "prior_L2_change": 0.05562680965425644
+        },
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.15097246177269713
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.14052850983332488
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.11879381651793752
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.07861768891150507
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.09580930970978878
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "fitting": 137,
+      "held": 70,
+      "fits": [
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.07264129785479698
+        },
+        {
+          "candidate": "speed1_yaw10",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.13256090401525783
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.16010011863788165
+        },
+        {
+          "candidate": "speed10_yaw1",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.13826452276784354
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-24",
+          "iterations": 12,
+          "prior_L2_change": 0.07261324555440084
+        },
+        {
+          "candidate": "speed3_yaw3",
+          "setup": "2026-09-25",
+          "iterations": 12,
+          "prior_L2_change": 0.09984942393595128
+        }
+      ]
+    }
+  ],
+  "selected": {
+    "candidate": "speed1_yaw10",
+    "eligible": true,
+    "ATE_mm": 127.53162704843507,
+    "max_guard_ratios": {
+      "v34_participant_ratios": 1.049294920282777,
+      "v34_maneuver_ratios": 1.0260829171297998,
+      "v34_metric_ratios": 0.9745759287384862,
+      "v121_participant_ratios": 1.0213285982322573,
+      "v121_maneuver_ratios": 1.02604851782043,
+      "v121_metric_ratios": 0.992751124674065,
+      "v124_participant_ratios": 1.005447263273121,
+      "v124_maneuver_ratios": 1.020389075149601,
+      "v124_metric_ratios": 0.9992174927087518
+    }
+  },
+  "candidates_reviewed": [
+    {
+      "candidate": "v124",
+      "eligible": true,
+      "ATE_mm": 128.87285434811182,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.0495603594513798,
+        "v34_maneuver_ratios": 1.0055800695233474,
+        "v34_metric_ratios": 0.9759752784667644,
+        "v121_participant_ratios": 1.021586962786154,
+        "v121_maneuver_ratios": 1.0055463575695371,
+        "v121_metric_ratios": 0.9943767648952989,
+        "v124_participant_ratios": 1.0,
+        "v124_maneuver_ratios": 1.0,
+        "v124_metric_ratios": 1.0
+      }
+    },
+    {
+      "candidate": "speed1_yaw10",
+      "eligible": true,
+      "ATE_mm": 127.53162704843507,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.049294920282777,
+        "v34_maneuver_ratios": 1.0260829171297998,
+        "v34_metric_ratios": 0.9745759287384862,
+        "v121_participant_ratios": 1.0213285982322573,
+        "v121_maneuver_ratios": 1.02604851782043,
+        "v121_metric_ratios": 0.992751124674065,
+        "v124_participant_ratios": 1.005447263273121,
+        "v124_maneuver_ratios": 1.020389075149601,
+        "v124_metric_ratios": 0.9992174927087518
+      }
+    },
+    {
+      "candidate": "speed10_yaw1",
+      "eligible": false,
+      "ATE_mm": 128.15622443118735,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.0728686529441178,
+        "v34_maneuver_ratios": 1.0028664324179175,
+        "v34_metric_ratios": 0.9774077021204557,
+        "v121_participant_ratios": 1.0795892486344185,
+        "v121_maneuver_ratios": 1.0028328114384726,
+        "v121_metric_ratios": 0.9971451555262689,
+        "v124_participant_ratios": 1.0746810468155563,
+        "v124_maneuver_ratios": 1.0072926581522934,
+        "v124_metric_ratios": 1.0074959765322724
+      }
+    },
+    {
+      "candidate": "speed3_yaw3",
+      "eligible": false,
+      "ATE_mm": 127.56304818841055,
+      "max_guard_ratios": {
+        "v34_participant_ratios": 1.05433280067841,
+        "v34_maneuver_ratios": 1.0146644788501442,
+        "v34_metric_ratios": 0.9660511991083561,
+        "v121_participant_ratios": 1.026232206572558,
+        "v121_maneuver_ratios": 1.0146304623425775,
+        "v121_metric_ratios": 0.9842655723838645,
+        "v124_participant_ratios": 1.0150350947695694,
+        "v124_maneuver_ratios": 1.0090339989843902,
+        "v124_metric_ratios": 0.9898316283441125
+      }
+    }
+  ],
+  "baseline_v124_ATE_mm": 128.87285434811182,
+  "benefit_vs_v124_mm": 1.3412272996767456,
+  "frozen_v124_manifest_sha256": "e00ab4b33d90b0af6daaef8d63b41fdeb1c7c3317c9cf47ba03b5f7b3fcbe3b3",
+  "output_manifest_sha256": "aa74254dd7d2a018085f816981cc4735b014920a51d65cde42e38d57546b25b5",
+  "review_script_sha256": "be1d077d4499838023950c382b44bcfc447a18cb61a05ef0bc5dc6fa4f3b5aae",
+  "checks": [
+    "all output/input/source hashes and exact output/input path coverage",
+    "frozen v124 output seal and all inherited v121/v124 source hashes unchanged",
+    "207 IDs/12 people/15 No20 and original fold exclusions/normalizations",
+    "fixed three configs and finite weights/permitted monotone fit histories",
+    "621 pre-fit reproduction records; 1863 exact triple-control array comparisons",
+    "1242 paired supports, finite supported predictions and independent saved-motion integration",
+    "speed/yaw caps and exactly unchanged lateral motion",
+    "direct primary/guard metrics and position/coverage/path/RTE/distance-relative diagnostics",
+    "all control CSV metric fields exactly equal sealed v124",
+    "all participant/maneuver tables and every guard versus all three controls",
+    "strict v124 improvement/eligibility/winner reconstructed"
+  ],
+  "declined_checks": [
+    "Fitting loss values/initial priors not recomputed from training features; source and sealed prior metadata reviewed",
+    "Route/Frechet and filtered derivative diagnostic values for new candidates not independently recomputed; no selection uses them",
+    "Full-TRAIN package/report output review is a separate follow-up",
+    "No raw acquisition, validation/test, runtime geometry or independent generalization evaluation"
+  ],
+  "limitations": [
+    "Conditional post-selection TRAIN screen only",
+    "Synthetic loss tests passed in coordinator execution; reviewer inspected them without rerunning"
+  ]
+}
